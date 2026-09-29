@@ -1,0 +1,5 @@
+# dsh-autossh 的 bundle 层：插入一个 host 级插件行。
+# id 必须与 index.js 的 `export const name` 完全一致（都是 tunnel），否则会静默不生效。
+- insert:
+    - id: tunnel
+      name: dsh-autossh

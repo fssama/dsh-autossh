@@ -1,0 +1,39 @@
+{
+  "name": "dsh-autossh",
+  "version": "1.0.0",
+  "description": "DSH 插件：启动时自动寻找对端主机并建立 SSH 双向隧道，断线自愈。SSH tunnel auto-discovery and self-healing for DeepSeek Harness.",
+  "type": "module",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js",
+    "./cordis.patch.yml": "./cordis.patch.yml",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "ssh",
+    "tunnel",
+    "autossh",
+    "self-healing"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fssama/dsh-autossh.git"
+  },
+  "bugs": {
+    "url": "https://github.com/fssama/dsh-autossh/issues"
+  },
+  "homepage": "https://github.com/fssama/dsh-autossh#readme"
+}
